@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 480px) {
+  .mobile-nav {
+    display: block; 
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 30px;
+  }
+  .image-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+/* Estilos para dispositivos de escritorio */
+@media (min-width: 769px) {
+  body {
+    font-size: 18px;
+    padding: 40px;
+  }
+  .image-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+  
+body, .header {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos adicionales para el header */
+.header {
+    text-align: center; 
+    color: white; 
+    overflow: auto; 
+    position: fixed; 
+    width: 100%; 
+    top: 0; /* Alinear en la parte superior */
+    z-index: 1000; /* Asegurarse de que el header se muestre sobre otros elementos */
+}
+
+
+.header nav a {
+    margin-right: 10px; /* Espaciado entre enlaces */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    background-color: rgb(249, 249, 249); /* Color de fondo del cuadro */
+    padding: 5px 10px; /* Espaciado interno del cuadro */
+    border-radius: 5px; /* Borde redondeado del cuadro */
+}
+
+
+footer {
+    background-color: rgb(0, 0, 0); /* Color de fondo naranja */
+    text-align: center; /* Centrar texto horizontalmente */
+    padding: 1px 0; /* Espaciado superior e inferior */
+    color: white; /* Color del texto blanco para contrastar con el fondo */
+    position: fixed; /* Fijar el footer en la parte inferior de la ventana */
+    width: 100%; /* Ancho completo */
+    bottom: 0; /* Fijar en la parte inferior */
+    
+}
+
+
+.flex-container {
+    position: relative;
+    max-width: 500px; 
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.text {
+    background-color: gray;
+    color: white;
+    padding: 15px;
+    font-size: 1.3em;
+    text-align: center;
+}
+.carousel-item {
+    position: relative; 
+}
+
+.carousel-item img {
+    max-width: 65vw; /* Máximo ancho es la mitad del ancho del viewport */
+    max-height: 80vh; /* Máxima altura es la mitad de la altura del viewport */
+    width: auto; /* Ancho automático para mantener la proporción */
+    height: 80VH; /* Altura fija para todas las imágenes */
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0; /* Posiciona en la parte inferior */
+    width: 40%; /* Ancho del 40% del tamaño de la imagen */
+    max-width: 300px; /* Ancho máximo de 300px */
+    max-height: 40%; /* Altura máxima del 40% del tamaño de la imagen */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    color: white; /* Color del texto */
+    text-align: center;
+    font-size: 0.8em; /* Tamaño del texto reducido */
+    margin-left: 23.5%; /* Centra horizontalmente */
+    margin-bottom: 1%; 
+
+}
+.col{
+    color: rgb(255, 255, 255); 
+    background-color: rgba(28, 24, 24, 0.5); 
+}
+
+
+/*formulario*/
+
+.form-control {
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff; 
+
+  }
+  
+.comment-box textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    height: 100px; 
+}
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    cursor: pointer;
+  }
+
+
+
+   /* Estilo para las imágenes */
+.cliente-img {
+    width: 200px; 
+    height: 200px;
+}
+
+/* Estilo para el contenedor de las imágenes */
+.image-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.contenedor-principal {
+    display: flex;
+    justify-content: center; 
+    margin: 20px;
+    max-width: 800px; 
+.columna {
+    flex: 1;
+    padding: 10px;
+}
+}
+
+tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; 
+}
+
+.encabezado, .celda {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.encabezado {
+    background-color: #f2f2f2;
+}

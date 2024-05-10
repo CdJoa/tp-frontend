@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="https://kit.fontawesome.com/8cb2884944.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="static/CSS/main.css">
+    <script src="static/JS/includeHeader.js"></script>
+    <script src="static/JS/includeFooter.js"></script>
+    
+</head>
+<body>
+    <h2>Formulario de Suscripción</h2> 
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="form-control row">
+                    <label class="col-md-1" for="Nombre">Nombre:</label>
+                    <input class="col-md-4" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre aquí...">
+                    
+                    <label class="col-md-1" for="Apellido">Apellido:</label>
+                    <input class="col-md-4" type="text" name="Apellido" id="Apellido" placeholder="Ingrese su apellido aquí...">
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-10">
+                <div class="form-control row">
+                    <label class="col-md-1" for="Telefono">Teléfono:</label>
+                    <input class="col-md-4" type="text" name="Telefono" id="Telefono" placeholder="Ingrese su Teléfono aquí...">
+                    
+                    <label class="col-md-1" for="Mail">Mail:</label>
+                    <input class="col-md-4" type="text" name="Mail" id="Mail" placeholder="Ingrese su email aquí...">
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-10">
+                <div class="form-control">
+                    <div class="comment-box">
+                        <p>Deja tu comentario</p>
+                        <textarea name="comment" id="comment" placeholder="Escribe tu comentario aquí..."></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="submit" value="Enviar" class="btn btn-primary" id="submitBtn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+<script>
+    document.getElementById('submitBtn').addEventListener('click', function(event) {
+        event.preventDefault(); 
+
+        var nombre = document.getElementById('Nombre').value.trim();
+        var apellido = document.getElementById('Apellido').value.trim();
+        var telefono = document.getElementById('Telefono').value.trim();
+        var mail = document.getElementById('Mail').value.trim();
+
+        if (nombre === '' || apellido === '' || telefono === '' || mail === '') {
+            alert('Por favor, rellene todos los campos.');
+        } else {
+            alert('Suscripción realizada con éxito');
+            document.getElementById('Nombre').value = ''; 
+            document.getElementById('Apellido').value = ''; 
+            document.getElementById('Telefono').value = ''; 
+            document.getElementById('Mail').value = ''; 
+            document.getElementById('comment').value = ''; 
+        }
+    });
+</script>
+
+
+
+</html>
+
+
+
+
+
+
+
+
